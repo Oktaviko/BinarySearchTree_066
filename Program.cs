@@ -48,14 +48,28 @@ namespace BinarySearchTree_066
                 else if (string.Compare(element, parent.info) < 0)
                 {
                     if (string.Compare(element, parent.info) < 0)
-                        parent. leftchild = tmp
-                }   
+                        parent.leftchild = tmp;
+                }
                 else
                 {
                     parent.rightchild = tmp;
                 }
             }
 
+        }
+        public void search(string element, ref Node parent, ref Node currentNode)
+        {
+            /*This function search the currentNode of the specified Node as well as the current node of its parent*/
+            currentNode = ROOT;
+            parent = null;
+            while((currentNode != null) && (currentNode.info != element))
+            {
+                parent = currentNode;
+                if (string.Compare(element, currentNode.info) < 0)
+                    currentNode = currentNode.leftchild;
+                else
+                    currentNode = currentNode.rightchild;
+            }
         }
     }
     internal class Program
