@@ -12,6 +12,11 @@ namespace BinarySearchTree_066
         public Node leftchild;
         public Node rightchild;
         //Constructor for the node class
+
+        public Node(string i, Node l, Node r)
+        {
+
+        }
     }
     internal class Program
     {
