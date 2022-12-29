@@ -27,7 +27,7 @@ namespace BinarySearchTree_066
         public Node ROOT;
         public BinaryTree()
         {
-
+            ROOT = null; /*Initializing ROOT to null*/
         }
     }
     internal class Program
