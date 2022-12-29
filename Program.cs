@@ -35,7 +35,7 @@ namespace BinarySearchTree_066
             search(element, ref parent, ref currentNode);
             if (currentNode != null)/*Check if the Node to be inserted already inserted or not*/
             {
-                Console.WriteLine(currentNode"Duplicate words not allowed");
+                Console.WriteLine("Duplicate words not allowed");
                 return;
             }
             else /*If the specified node is not present*/
@@ -69,6 +69,20 @@ namespace BinarySearchTree_066
                     currentNode = currentNode.leftchild;
                 else
                     currentNode = currentNode.rightchild;
+            }
+        }
+        public void inorder(Node ptr)
+        {
+            if (ROOT == null)
+            {
+                Console.WriteLine("Tree is empty");
+                return;
+            }
+            if (ptr != null)
+            {
+                inorder(ptr.leftchild);
+                Console.WriteLine(ptr.info + " ");
+                inorder(ptr.rightchild);
             }
         }
     }
