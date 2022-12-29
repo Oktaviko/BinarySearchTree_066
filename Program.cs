@@ -24,7 +24,11 @@ namespace BinarySearchTree_066
     /*A node class consist of three things, the information, reference to the right child, and refferences to the left child */
     class BinaryTree
     {
+        public Node ROOT;
+        public BinaryTree()
+        {
 
+        }
     }
     internal class Program
     {
