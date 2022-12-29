@@ -15,9 +15,13 @@ namespace BinarySearchTree_066
 
         public Node(string i, Node l, Node r)
         {
-
+            info = i;
+            leftchild = l;
+            rightchild = r;
         }
     }
+
+    /*A node class consist of three things, the information, reference to the right child, and refferences to the left child */
     internal class Program
     {
         static void Main(string[] args)
